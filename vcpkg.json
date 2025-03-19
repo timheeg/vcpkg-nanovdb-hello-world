@@ -3,6 +3,12 @@
   "name": "vcpkg-nanovdb-hello-world",
   "version": "0.0.1",
   "dependencies": [
-    "openvdb"
+    {
+      "name": "openvdb",
+      "default-features": false,
+      "features": [
+        "nanovdb-tools"
+      ]
+    }
   ]
 }
